@@ -1,6 +1,5 @@
-// const {defaults} = require('jest-config');
-// module.exports = {
-//   // ...
-//   moduleFileExtensions: [...defaults.moduleFileExtensions, 'ts', 'tsx'],
-//   // ...
-// };
+const {defaults} = require('jest-config');
+module.exports = {
+  ...defaults,
+  testEnvironment: 'jest-environment-jsdom'
+};
